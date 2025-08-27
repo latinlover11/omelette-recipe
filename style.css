@@ -1,0 +1,133 @@
+* {
+    font-family: outfit, sans-serif;
+}
+body {
+    background-color: hsl(30, 54%, 90%);
+}
+
+/* Styles for mobile devices */
+@media (max-width: 375px) {
+    body {
+        background-color: hsl(30, 10%, 34%);
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Styles for desktop devices */
+@media (min-width: 1440px) {
+    body {
+        background-color: hsl(30, 10%, 34%);
+    }
+    .container {
+        width: 1440px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+/* Removed commented-out @font-face rules since you are linking via HTML */
+
+.recipe-container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 200px;
+    margin: 20px auto;
+    font-family: "Outfit", sans-serif; /* Uncommented and fixed font-family */
+}
+
+#recipe-container {
+    width: 760px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    border-radius: 20px;
+}
+
+#omelette-img {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#omelette-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+h1 {
+    padding-left: 1em;
+    font-family: "Young Serif", serif;    
+}
+
+h2 {
+    color:hsl(14, 45%, 36%);
+    font-family: "young serif", serif;
+}
+
+p {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#prep-time, #ingredients, #instructions, #nutrition-table {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#prep-time {
+    background-color: hsl(330, 100%, 98%);
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* New class for the requested style change */
+.outfit-bold {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+ul li, ol li {
+    margin-bottom: 1em; /* Added this to create a gap between list items */
+    padding-left: 1em; /* This creates a gap between the bullet point and the text */
+}
+
+/* New styles for the nutrition table */
+#nutrition-table table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders render correctly */
+}
+
+#nutrition-table td {
+    padding: 0.5em 0;
+    border-bottom: 1px solid hsl(30, 18%, 95%);
+}
+
+#nutrition-table tr:last-child td {
+    border-bottom: none;
+}
+
+#nutrition-table td:first-child {
+    text-align: left; /* Aligns the first column to the left */
+}
+
+#nutrition-table p {
+    text-align: left; /* Aligns the paragraph to the left */
+}
